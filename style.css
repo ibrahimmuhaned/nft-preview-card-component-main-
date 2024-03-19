@@ -1,0 +1,150 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+*{
+    margin: 0;
+    overflow:hidden;
+    padding: 0;
+}
+
+.container{
+    font-family:'outfit',sans-serif;
+    font-size: 18px;
+    background-color:  hsl(215, 100%, 11%);
+    color: hsl(215, 51%, 70%);
+    padding: 25px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(225, 45%, 44%);
+}
+
+.nft-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12.5px;
+}
+
+.nft-container p{
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.nft-container h3{
+color: #fff;
+transition: color 0.3s ease-in-out;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.img{
+display: inline-block;
+border-radius: 13px;
+margin-bottom: 20px;
+position: relative;
+
+}
+
+.show-img{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    border-radius: 12.5px;
+    z-index: 999;
+    background-color: hsl(177,100%,50%,50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.show-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+ol{
+    list-style-type:none;
+}
+
+.nft-container ol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    padding: 16px 0;
+    border-bottom: 0.5px solid hsl(215, 32%, 27%);
+}
+
+.nft-container ol li{
+    display: flex;
+    align-items: center;
+}
+
+.nft-container ol li:first-child{
+    color:rgb(3, 255, 255);
+
+}
+
+.nft-container ol li img{
+    padding-right: 5px;
+}
+
+#creator-section{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+margin-top: 16px;
+}
+
+#creator-section .creator-img{
+    width: 35px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    margin-right: 15px;
+}
+
+#creator-section p span {
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+
+#creator-section p span:hover{
+    color:aqua;
+    cursor: pointer;
+}
+
+.nft-container h3:hover{
+    color:aqua;
+    cursor: pointer;
+}
+
+.show-img:hover{
+cursor: pointer;
+opacity: 1;
+
+}
+
+@media (min-width: 375px){
+    .nft-container{
+        width: 290px;
+        margin: 0 auto 20px;
+    }
+}
+
